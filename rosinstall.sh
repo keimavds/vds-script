@@ -25,3 +25,4 @@ source /opt/ros/rolling/setup.bash
 EOU
 sudo chmod +x ~/myscript/rosinstall.sh
 sudo bash ~/myscript/rosinstall.sh
+echo 'source /opt/ros/jazzy/setup.bash' >>~/.bashrc
