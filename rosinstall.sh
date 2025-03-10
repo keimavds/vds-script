@@ -2,6 +2,7 @@
 mkdir -p  ~/myscript
 chmod 777 ~/myscript/
 touch  ~/myscript/rosinstall.sh
+sudo chmod +x ~/myscript/rosinstall.sh
 cat << EOU >~/myscript/rosinstall.sh
 locale  # check for UTF-8
 sudo apt update && sudo apt install locales
@@ -21,8 +22,8 @@ sudo apt update
 sudo apt upgrade
 sudo apt install ros-rolling-desktop
 sudo apt install ros-rolling-ros-base
-source /opt/ros/rolling/setup.bash
+source /opt/ros/rolling/jazzy/setup.bash
 EOU
-sudo chmod +x ~/myscript/rosinstall.sh
-sudo bash ~/myscript/rosinstall.sh
 echo 'source /opt/ros/jazzy/setup.bash' >>~/.bashrc
+sudo bash ~/myscript/rosinstall.sh
+
