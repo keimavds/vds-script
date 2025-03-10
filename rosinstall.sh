@@ -25,10 +25,8 @@ sudo apt install ros-rolling-ros-base
 cd /opt/ros/rolling
 source /opt/ros/rolling/setup.bash
 echo 'source /opt/ros/rolling/setup.bash' >>~/.bashrc
-ros2
-gnome-terminal -e ros2 run demo_nodes_cpp talker
-gnome-terminal -e ros2 run demo_nodes_py listener
-
+ros2 run demo_nodes_cpp talker
+gnome-terminal --command="bash -c 'cd /opt/ros/rolling; source /opt/ros/rolling/setup.bash; ros2 run demo_nodes_py listener; $SHELL'"
 EOU
 sudo bash ~/myscript/rosinstall.sh
 
