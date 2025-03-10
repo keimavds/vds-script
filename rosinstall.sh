@@ -22,8 +22,13 @@ sudo apt update
 sudo apt upgrade
 sudo apt install ros-rolling-desktop
 sudo apt install ros-rolling-ros-base
+cd /opt/ros/rolling
 source /opt/ros/rolling/setup.bash
 echo 'source /opt/ros/rolling/setup.bash' >>~/.bashrc
+ros2
+gnome-terminal -e ros2 run demo_nodes_cpp talker
+gnome-terminal -e ros2 run demo_nodes_py listener
+
 EOU
 sudo bash ~/myscript/rosinstall.sh
 
