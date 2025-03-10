@@ -22,8 +22,8 @@ sudo apt update
 sudo apt upgrade
 sudo apt install ros-rolling-desktop
 sudo apt install ros-rolling-ros-base
-source /opt/ros/rolling/jazzy/setup.bash
-echo 'source /opt/ros/jazzy/setup.bash' >>~/.bashrc
+source /opt/ros/rolling/setup.bash
+echo 'source /opt/ros/rolling/setup.bash' >>~/.bashrc
 EOU
 sudo bash ~/myscript/rosinstall.sh
 
